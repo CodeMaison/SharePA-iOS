@@ -30,7 +30,6 @@
                       @"600 mètres":@"La distance moyenne des trajets piétons à Paris",
                       @"13 minutes":@"La durée moyenne d'un trajet piéton à Paris"};
     
-    
     NSUInteger  index = arc4random_uniform([self.dataDico count]);
     NSLog(@"rand : %u",index);
     
@@ -38,7 +37,9 @@
     self.infoLab.text = self.dataDico[self.valueLab.text];
     [self performSelector:@selector(dismissDefaultImage) withObject:nil afterDelay:2.0];
 }
-
+- (BOOL) prefersStatusBarHidden {
+    return YES;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

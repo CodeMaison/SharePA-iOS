@@ -12,7 +12,6 @@
 
 #define kSiteURLString @"http://code-maison.cloud.ger.systems/SharePA/"
 
-//#define kSiteURLString @"http://openlayers.org/en/master/examples/geolocation-orientation.html?q=mobile"
 
 @interface ViewController () <UIWebViewDelegate>
 @property (nonatomic, weak) IBOutlet UIWebView *webView;
@@ -24,7 +23,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:kSiteURLString]]];
 }
 
@@ -32,7 +30,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (BOOL) prefersStatusBarHidden {
+    return YES;
+}
 - (IBAction)showFormPage:(id)sender
 {
     ProblemFormViewController *formVC = [[ProblemFormViewController alloc] init];

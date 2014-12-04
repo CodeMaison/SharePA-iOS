@@ -420,6 +420,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Renaud Codarini (66VY6M3AMZ)";
 				GCC_PREFIX_HEADER = HackDay/PrefixHeader.pch;
 				INFOPLIST_FILE = HackDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5c6c8b6f-f607-4ada-9af2-a4a85ce40c1a";
@@ -433,6 +434,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: GROUPE EXPRESS ROULARTA (8WKQP4VNRG)";
 				GCC_PREFIX_HEADER = HackDay/PrefixHeader.pch;
 				INFOPLIST_FILE = HackDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5c6c8b6f-f607-4ada-9af2-a4a85ce40c1a";

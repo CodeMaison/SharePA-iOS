@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -24,7 +25,12 @@
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOd-it-z0K">
                     <rect key="frame" x="-8" y="556" width="616" height="44"/>
                     <items>
-                        <barButtonItem image="geoloc-2.png" style="done" id="fK7-kB-s5J"/>
+                        <barButtonItem image="geoloc-2.png" style="done" id="fK7-kB-s5J">
+                            <color key="tintColor" red="1" green="0.0" blue="0.12941943359999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="showFormPage:" destination="-1" id="FH6-Vg-9E0"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem title="Nouveau lieu" id="HMH-zA-4U8">
                             <connections>
                                 <action selector="showFormPage:" destination="-1" id="ggD-nI-C3G"/>
@@ -32,12 +38,14 @@
                         </barButtonItem>
                         <barButtonItem systemItem="flexibleSpace" id="o4J-Ig-fc6"/>
                         <barButtonItem systemItem="stop" id="8Mo-9N-euo">
+                            <color key="tintColor" red="1" green="0.0" blue="0.12941943359999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="stopLoading" destination="aE4-hz-Sxy" id="lJZ-9e-hya"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem width="30" systemItem="fixedSpace" id="4Th-o0-KBZ"/>
                         <barButtonItem systemItem="refresh" id="2HR-sn-9wX">
+                            <color key="tintColor" red="1" green="0.0" blue="0.12941943359999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="reload" destination="aE4-hz-Sxy" id="tBe-CL-KQU"/>
                             </connections>
