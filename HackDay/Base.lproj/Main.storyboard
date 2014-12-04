@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="b62-Wq-Fjn">
+            <objects>
+                <viewController id="X6E-CK-mOT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jdK-Tq-kcm"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Qi-El-yct"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fCY-zA-A1y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0mc-9G-Cf1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="-468"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +34,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4V-YR-ZoL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="UVH-6L-jJn"/>
+                                </connections>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHi-Aw-tj5">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Déclarer un problème" id="hNm-WG-jhN">
+                                        <connections>
+                                            <action selector="showFormPage:" destination="BYZ-38-t0r" id="31k-MD-iZ2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="lcZ-Sb-usP"/>
+                                    <barButtonItem systemItem="stop" id="D1f-CE-Q9x">
+                                        <connections>
+                                            <action selector="stopLoading" destination="E4V-YR-ZoL" id="6L0-dx-7cD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="30" systemItem="fixedSpace" id="EG3-lR-niY"/>
+                                    <barButtonItem systemItem="refresh" id="M0D-iD-2bM">
+                                        <connections>
+                                            <action selector="reload" destination="E4V-YR-ZoL" id="Odr-0J-UUK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.0" blue="0.12941943364042174" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YHi-Aw-tj5" firstAttribute="top" secondItem="E4V-YR-ZoL" secondAttribute="bottom" id="APp-x7-wyG"/>
+                            <constraint firstItem="YHi-Aw-tj5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="H15-rM-jtK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="E4V-YR-ZoL" secondAttribute="trailing" constant="-16" id="LU6-z6-seP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YHi-Aw-tj5" secondAttribute="trailing" constant="-16" id="LbB-g8-fUt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YHi-Aw-tj5" secondAttribute="bottom" id="f6O-Zc-IRx"/>
+                            <constraint firstItem="E4V-YR-ZoL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="lVx-eT-57p"/>
+                            <constraint firstItem="E4V-YR-ZoL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="ndL-h9-3dS"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="E4V-YR-ZoL" id="XBT-Hn-G8W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

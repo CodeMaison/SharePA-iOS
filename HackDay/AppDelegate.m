@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "GERLocationManager.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[GERLocationManager sharedLocationManager] startup:nil];
+    [[GERLocationManager sharedLocationManager] startUpdatingLocation];
     return YES;
 }
 
@@ -28,10 +31,12 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [[GERLocationManager sharedLocationManager] stopUpdatingLocation];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    [[GERLocationManager sharedLocationManager] startUpdatingLocation];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {

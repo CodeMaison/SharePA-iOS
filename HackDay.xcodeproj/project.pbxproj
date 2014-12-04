@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A881928A1A306B3100B6CAC8 /* GERHTTPCachedDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A88192851A306B3100B6CAC8 /* GERHTTPCachedDownloadOperation.m */; };
+		A881928B1A306B3100B6CAC8 /* GERJSONDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A88192871A306B3100B6CAC8 /* GERJSONDownloader.m */; };
+		A881928C1A306B3100B6CAC8 /* GERLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A88192891A306B3100B6CAC8 /* GERLocationManager.m */; };
+		A88192991A307C1C00B6CAC8 /* ProblemFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A88192971A307C1C00B6CAC8 /* ProblemFormViewController.m */; };
+		A881929A1A307C1C00B6CAC8 /* ProblemFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A88192981A307C1C00B6CAC8 /* ProblemFormViewController.xib */; };
+		A881929D1A3086B400B6CAC8 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A881929C1A3086B400B6CAC8 /* TableViewCell.m */; };
+		A88192A01A30A85500B6CAC8 /* GERAlertDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = A881929F1A30A85500B6CAC8 /* GERAlertDisplayController.m */; };
 		A898DF9B1A30492100D4125C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A898DF9A1A30492100D4125C /* main.m */; };
 		A898DF9E1A30492100D4125C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A898DF9D1A30492100D4125C /* AppDelegate.m */; };
 		A898DFA11A30492100D4125C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A898DFA01A30492100D4125C /* ViewController.m */; };
@@ -27,6 +34,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A88192841A306B3100B6CAC8 /* GERHTTPCachedDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GERHTTPCachedDownloadOperation.h; path = Lib/GERHTTPCachedDownloadOperation.h; sourceTree = "<group>"; };
+		A88192851A306B3100B6CAC8 /* GERHTTPCachedDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GERHTTPCachedDownloadOperation.m; path = Lib/GERHTTPCachedDownloadOperation.m; sourceTree = "<group>"; };
+		A88192861A306B3100B6CAC8 /* GERJSONDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GERJSONDownloader.h; path = Lib/GERJSONDownloader.h; sourceTree = "<group>"; };
+		A88192871A306B3100B6CAC8 /* GERJSONDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GERJSONDownloader.m; path = Lib/GERJSONDownloader.m; sourceTree = "<group>"; };
+		A88192881A306B3100B6CAC8 /* GERLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GERLocationManager.h; path = Lib/GERLocationManager.h; sourceTree = "<group>"; };
+		A88192891A306B3100B6CAC8 /* GERLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GERLocationManager.m; path = Lib/GERLocationManager.m; sourceTree = "<group>"; };
+		A881928D1A306B5E00B6CAC8 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A88192961A307C1C00B6CAC8 /* ProblemFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemFormViewController.h; sourceTree = "<group>"; };
+		A88192971A307C1C00B6CAC8 /* ProblemFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemFormViewController.m; sourceTree = "<group>"; };
+		A88192981A307C1C00B6CAC8 /* ProblemFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProblemFormViewController.xib; sourceTree = "<group>"; };
+		A881929B1A3086B400B6CAC8 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		A881929C1A3086B400B6CAC8 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		A881929E1A30A85500B6CAC8 /* GERAlertDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GERAlertDisplayController.h; path = Lib/GERAlertDisplayController.h; sourceTree = "<group>"; };
+		A881929F1A30A85500B6CAC8 /* GERAlertDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GERAlertDisplayController.m; path = Lib/GERAlertDisplayController.m; sourceTree = "<group>"; };
 		A898DF951A30492100D4125C /* HackDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A898DF991A30492100D4125C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A898DF9A1A30492100D4125C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +81,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A88192831A306B1E00B6CAC8 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				A881929E1A30A85500B6CAC8 /* GERAlertDisplayController.h */,
+				A881929F1A30A85500B6CAC8 /* GERAlertDisplayController.m */,
+				A88192841A306B3100B6CAC8 /* GERHTTPCachedDownloadOperation.h */,
+				A88192851A306B3100B6CAC8 /* GERHTTPCachedDownloadOperation.m */,
+				A88192861A306B3100B6CAC8 /* GERJSONDownloader.h */,
+				A88192871A306B3100B6CAC8 /* GERJSONDownloader.m */,
+				A88192881A306B3100B6CAC8 /* GERLocationManager.h */,
+				A88192891A306B3100B6CAC8 /* GERLocationManager.m */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
 		A898DF8C1A30492100D4125C = {
 			isa = PBXGroup;
 			children = (
@@ -85,9 +121,15 @@
 				A898DF9D1A30492100D4125C /* AppDelegate.m */,
 				A898DF9F1A30492100D4125C /* ViewController.h */,
 				A898DFA01A30492100D4125C /* ViewController.m */,
+				A88192961A307C1C00B6CAC8 /* ProblemFormViewController.h */,
+				A88192971A307C1C00B6CAC8 /* ProblemFormViewController.m */,
+				A88192981A307C1C00B6CAC8 /* ProblemFormViewController.xib */,
+				A881929B1A3086B400B6CAC8 /* TableViewCell.h */,
+				A881929C1A3086B400B6CAC8 /* TableViewCell.m */,
 				A898DFA21A30492100D4125C /* Main.storyboard */,
 				A898DFA51A30492100D4125C /* Images.xcassets */,
 				A898DFA71A30492100D4125C /* LaunchScreen.xib */,
+				A88192831A306B1E00B6CAC8 /* Libs */,
 				A898DF981A30492100D4125C /* Supporting Files */,
 			);
 			path = HackDay;
@@ -98,6 +140,7 @@
 			children = (
 				A898DF991A30492100D4125C /* Info.plist */,
 				A898DF9A1A30492100D4125C /* main.m */,
+				A881928D1A306B5E00B6CAC8 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -201,6 +244,7 @@
 			files = (
 				A898DFA41A30492100D4125C /* Main.storyboard in Resources */,
 				A898DFA91A30492100D4125C /* LaunchScreen.xib in Resources */,
+				A881929A1A307C1C00B6CAC8 /* ProblemFormViewController.xib in Resources */,
 				A898DFA61A30492100D4125C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +263,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A88192A01A30A85500B6CAC8 /* GERAlertDisplayController.m in Sources */,
+				A881928A1A306B3100B6CAC8 /* GERHTTPCachedDownloadOperation.m in Sources */,
 				A898DFA11A30492100D4125C /* ViewController.m in Sources */,
 				A898DF9E1A30492100D4125C /* AppDelegate.m in Sources */,
 				A898DF9B1A30492100D4125C /* main.m in Sources */,
+				A881928B1A306B3100B6CAC8 /* GERJSONDownloader.m in Sources */,
+				A881929D1A3086B400B6CAC8 /* TableViewCell.m in Sources */,
+				A881928C1A306B3100B6CAC8 /* GERLocationManager.m in Sources */,
+				A88192991A307C1C00B6CAC8 /* ProblemFormViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,9 +395,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Renaud Codarini (66VY6M3AMZ)";
+				GCC_PREFIX_HEADER = HackDay/PrefixHeader.pch;
 				INFOPLIST_FILE = HackDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5c6c8b6f-f607-4ada-9af2-a4a85ce40c1a";
 			};
 			name = Debug;
 		};
@@ -355,9 +408,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: GROUPE EXPRESS ROULARTA (8WKQP4VNRG)";
+				GCC_PREFIX_HEADER = HackDay/PrefixHeader.pch;
 				INFOPLIST_FILE = HackDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5c6c8b6f-f607-4ada-9af2-a4a85ce40c1a";
 			};
 			name = Release;
 		};
@@ -414,6 +470,7 @@
 				A898DFBA1A30492100D4125C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A898DFBB1A30492100D4125C /* Build configuration list for PBXNativeTarget "HackDayTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +479,7 @@
 				A898DFBD1A30492100D4125C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
