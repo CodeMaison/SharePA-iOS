@@ -10,6 +10,7 @@
 #import "TableViewCell.h"
 #import "GERHTTPCachedDownloadOperation.h"
 #import "GERAlertDisplayController.h"
+#import "GERLocationManager.h"
 
 #define kCommentPlaceholder @"Laissez ici votre commentaire"
 #define kPostProblemURLString @"http://hack-day-ger.services/postCommentURL"
@@ -85,8 +86,14 @@ static NSString *CellIdentifier = @"contentCell";
     if (st.length > 0 && ![st isEqualToString:kCommentPlaceholder]) {
         params[@"comment"]=st;
     }
+    CLLocation *loc = [[GERLocationManager sharedLocationManager] currentLocation];
+    if (loc) {
+        st = [NSString stringWithFormat:@"lat=%f&long=%f",loc.coordinate.latitude,loc.coordinate.longitude];
+        params[@"coordinate"]=st;
+    }
+    
     [GERHTTPCachedDownloadOperation postRequestForURL:[NSURL URLWithString:kPostProblemURLString] parameters:params completionBlock:^(NSInteger code, NSData *data, NSURL *URLSource, NSError *error, BOOL isCancelled) {
-//        error = nil;
+        error = nil;
         NSString *messageToDisplay = nil;
         if (error) {
             messageToDisplay = @"Echec de l'envoi...";

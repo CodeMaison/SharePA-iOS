@@ -14,6 +14,9 @@
 		A881929A1A307C1C00B6CAC8 /* ProblemFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A88192981A307C1C00B6CAC8 /* ProblemFormViewController.xib */; };
 		A881929D1A3086B400B6CAC8 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A881929C1A3086B400B6CAC8 /* TableViewCell.m */; };
 		A88192A01A30A85500B6CAC8 /* GERAlertDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = A881929F1A30A85500B6CAC8 /* GERAlertDisplayController.m */; };
+		A88192A41A30AEC400B6CAC8 /* LayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A88192A21A30AEC400B6CAC8 /* LayoutViewController.m */; };
+		A88192A71A30B2B100B6CAC8 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = A88192A61A30B2B100B6CAC8 /* loading.png */; };
+		A88192A91A30BAE700B6CAC8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A88192A81A30BAE700B6CAC8 /* ViewController.xib */; };
 		A898DF9B1A30492100D4125C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A898DF9A1A30492100D4125C /* main.m */; };
 		A898DF9E1A30492100D4125C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A898DF9D1A30492100D4125C /* AppDelegate.m */; };
 		A898DFA11A30492100D4125C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A898DFA01A30492100D4125C /* ViewController.m */; };
@@ -48,6 +51,10 @@
 		A881929C1A3086B400B6CAC8 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		A881929E1A30A85500B6CAC8 /* GERAlertDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GERAlertDisplayController.h; path = Lib/GERAlertDisplayController.h; sourceTree = "<group>"; };
 		A881929F1A30A85500B6CAC8 /* GERAlertDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GERAlertDisplayController.m; path = Lib/GERAlertDisplayController.m; sourceTree = "<group>"; };
+		A88192A11A30AEC400B6CAC8 /* LayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutViewController.h; sourceTree = "<group>"; };
+		A88192A21A30AEC400B6CAC8 /* LayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutViewController.m; sourceTree = "<group>"; };
+		A88192A61A30B2B100B6CAC8 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loading.png; path = Images.xcassets/loading.png; sourceTree = "<group>"; };
+		A88192A81A30BAE700B6CAC8 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		A898DF951A30492100D4125C /* HackDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A898DF991A30492100D4125C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A898DF9A1A30492100D4125C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -121,6 +128,9 @@
 				A898DF9D1A30492100D4125C /* AppDelegate.m */,
 				A898DF9F1A30492100D4125C /* ViewController.h */,
 				A898DFA01A30492100D4125C /* ViewController.m */,
+				A88192A81A30BAE700B6CAC8 /* ViewController.xib */,
+				A88192A11A30AEC400B6CAC8 /* LayoutViewController.h */,
+				A88192A21A30AEC400B6CAC8 /* LayoutViewController.m */,
 				A88192961A307C1C00B6CAC8 /* ProblemFormViewController.h */,
 				A88192971A307C1C00B6CAC8 /* ProblemFormViewController.m */,
 				A88192981A307C1C00B6CAC8 /* ProblemFormViewController.xib */,
@@ -138,6 +148,7 @@
 		A898DF981A30492100D4125C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A88192A61A30B2B100B6CAC8 /* loading.png */,
 				A898DF991A30492100D4125C /* Info.plist */,
 				A898DF9A1A30492100D4125C /* main.m */,
 				A881928D1A306B5E00B6CAC8 /* PrefixHeader.pch */,
@@ -242,9 +253,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A88192A71A30B2B100B6CAC8 /* loading.png in Resources */,
 				A898DFA41A30492100D4125C /* Main.storyboard in Resources */,
 				A898DFA91A30492100D4125C /* LaunchScreen.xib in Resources */,
 				A881929A1A307C1C00B6CAC8 /* ProblemFormViewController.xib in Resources */,
+				A88192A91A30BAE700B6CAC8 /* ViewController.xib in Resources */,
 				A898DFA61A30492100D4125C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +282,7 @@
 				A898DF9E1A30492100D4125C /* AppDelegate.m in Sources */,
 				A898DF9B1A30492100D4125C /* main.m in Sources */,
 				A881928B1A306B3100B6CAC8 /* GERJSONDownloader.m in Sources */,
+				A88192A41A30AEC400B6CAC8 /* LayoutViewController.m in Sources */,
 				A881929D1A3086B400B6CAC8 /* TableViewCell.m in Sources */,
 				A881928C1A306B3100B6CAC8 /* GERLocationManager.m in Sources */,
 				A88192991A307C1C00B6CAC8 /* ProblemFormViewController.m in Sources */,

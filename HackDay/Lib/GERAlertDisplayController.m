@@ -15,7 +15,7 @@ static BOOL isVisible;
 + (void)displayAlertMessage:(NSString *)message{
     if (message && !isVisible){
         isVisible = TRUE;
-        UIAlertView *theAlertView = [[UIAlertView alloc] initWithTitle:@"The Walking Dad" message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *theAlertView = [[UIAlertView alloc] initWithTitle:@"SharePA" message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         dispatch_async(dispatch_get_main_queue(), ^{
             [theAlertView show];
         });
