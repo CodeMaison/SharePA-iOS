@@ -17,101 +17,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIn-kA-Jh0">
-                                <rect key="frame" x="33" y="365" width="551" height="68"/>
-                                <string key="text">"120 000 
-Le nombre (arrondi et extrapolé) de poussettes à Paris sur la base des naissances 2011/2014 dans l'aglomération (Source INSEE)"</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Le nombre de kilomètres de trottoirs offert par les rues parisiennes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkr-dK-KeA">
+                                <rect key="frame" x="25" y="286" width="551" height="152"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czb-s9-PJk">
-                                <rect key="frame" x="33" y="446" width="551" height="41"/>
-                                <string key="text">"600 mètres
-La distance moyenne des trajets piétons à Paris"	</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKn-ci-7cM">
+                                <rect key="frame" x="25" y="178" width="533" height="92"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="57"/>
+                                <color key="textColor" red="1" green="0.47058823529411764" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrI-Cf-Ooi">
-                                <rect key="frame" x="33" y="267" width="551" height="65"/>
-                                <string key="text">"3,6 millions
-Le nombre de déplacements effectué quotidiennement par les piétons à Paris"	</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7w-UI-moD">
-                                <rect key="frame" x="33" y="166" width="551" height="73"/>
-                                <string key="text">"332 000 
-Le nombre de personnes en situation de handicap à Paris (Source Mairie de Paris) "	</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quelques chiffres" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="081-f7-TCY">
-                                <rect key="frame" x="16" y="28" width="568" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkr-dK-KeA">
-                                <rect key="frame" x="33" y="98" width="551" height="50"/>
-                                <string key="text">"3000
- Le nombre de kilomètres de trottoirs offert par les rues parisiennes"	</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading.png" translatesAutoresizingMaskIntoConstraints="NO" id="rH0-tU-ygd">
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading.png" translatesAutoresizingMaskIntoConstraints="NO" id="rH0-tU-ygd">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.55294117647058827" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="kkr-dK-KeA" firstAttribute="top" secondItem="081-f7-TCY" secondAttribute="bottom" constant="46" id="5G7-xe-adM"/>
-                            <constraint firstItem="kkr-dK-KeA" firstAttribute="top" secondItem="081-f7-TCY" secondAttribute="bottom" constant="46" id="9hN-Yz-DXV"/>
-                            <constraint firstItem="rH0-tU-ygd" firstAttribute="leading" secondItem="fCY-zA-A1y" secondAttribute="leadingMargin" constant="-16" id="9vV-L8-eZC"/>
-                            <constraint firstItem="bIn-kA-Jh0" firstAttribute="trailing" secondItem="fCY-zA-A1y" secondAttribute="trailingMargin" id="A4K-oT-ebb"/>
-                            <constraint firstItem="W7w-UI-moD" firstAttribute="top" secondItem="kkr-dK-KeA" secondAttribute="bottom" constant="18" id="Apt-nE-aep"/>
-                            <constraint firstItem="bIn-kA-Jh0" firstAttribute="leading" secondItem="fCY-zA-A1y" secondAttribute="leadingMargin" constant="17" id="Av4-38-LuE"/>
-                            <constraint firstItem="KrI-Cf-Ooi" firstAttribute="leading" secondItem="fCY-zA-A1y" secondAttribute="leadingMargin" constant="17" id="Cvj-Xi-m0A"/>
-                            <constraint firstItem="bIn-kA-Jh0" firstAttribute="top" secondItem="W7w-UI-moD" secondAttribute="bottom" constant="95" id="G8f-wt-c32"/>
-                            <constraint firstItem="081-f7-TCY" firstAttribute="top" secondItem="jdK-Tq-kcm" secondAttribute="bottom" constant="8" id="GuA-Rc-WJj"/>
-                            <constraint firstItem="Czb-s9-PJk" firstAttribute="top" secondItem="bIn-kA-Jh0" secondAttribute="bottom" constant="45" id="Jeo-zD-45R"/>
-                            <constraint firstItem="kkr-dK-KeA" firstAttribute="top" secondItem="081-f7-TCY" secondAttribute="bottom" constant="49" id="VVh-so-kAf"/>
-                            <constraint firstItem="KrI-Cf-Ooi" firstAttribute="top" secondItem="kkr-dK-KeA" secondAttribute="bottom" constant="80" id="Y1B-iv-Kb4"/>
-                            <constraint firstItem="W7w-UI-moD" firstAttribute="leading" secondItem="fCY-zA-A1y" secondAttribute="leadingMargin" constant="17" id="YQe-lm-C5j"/>
-                            <constraint firstItem="081-f7-TCY" firstAttribute="trailing" secondItem="fCY-zA-A1y" secondAttribute="trailingMargin" id="Ydo-b2-dX8"/>
-                            <constraint firstItem="KrI-Cf-Ooi" firstAttribute="top" secondItem="W7w-UI-moD" secondAttribute="bottom" constant="28" id="aNw-LI-j7L"/>
-                            <constraint firstItem="rH0-tU-ygd" firstAttribute="top" secondItem="fCY-zA-A1y" secondAttribute="topMargin" id="aqj-md-dib"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rH0-tU-ygd" secondAttribute="trailing" constant="-16" id="czY-tQ-d4e"/>
-                            <constraint firstItem="KrI-Cf-Ooi" firstAttribute="trailing" secondItem="fCY-zA-A1y" secondAttribute="trailingMargin" id="dhq-CG-dVJ"/>
-                            <constraint firstItem="kkr-dK-KeA" firstAttribute="trailing" secondItem="fCY-zA-A1y" secondAttribute="trailingMargin" id="gVe-JS-xop"/>
-                            <constraint firstItem="Czb-s9-PJk" firstAttribute="leading" secondItem="fCY-zA-A1y" secondAttribute="leadingMargin" constant="17" id="jUR-RF-xRp"/>
-                            <constraint firstItem="081-f7-TCY" firstAttribute="leading" secondItem="fCY-zA-A1y" secondAttribute="leadingMargin" id="mNL-jt-aqx"/>
-                            <constraint firstItem="Czb-s9-PJk" firstAttribute="top" secondItem="KrI-Cf-Ooi" secondAttribute="bottom" constant="89" id="ofw-oT-TF6"/>
-                            <constraint firstItem="kkr-dK-KeA" firstAttribute="leading" secondItem="fCY-zA-A1y" secondAttribute="leadingMargin" constant="17" id="uec-Z6-Lrh"/>
-                            <constraint firstItem="bIn-kA-Jh0" firstAttribute="top" secondItem="KrI-Cf-Ooi" secondAttribute="bottom" constant="33" id="usj-2a-FGr"/>
-                            <constraint firstItem="9Qi-El-yct" firstAttribute="top" secondItem="rH0-tU-ygd" secondAttribute="bottom" id="yAT-4c-r1q"/>
-                            <constraint firstItem="W7w-UI-moD" firstAttribute="top" secondItem="081-f7-TCY" secondAttribute="bottom" constant="122" id="yPy-le-W0C"/>
-                            <constraint firstItem="W7w-UI-moD" firstAttribute="trailing" secondItem="fCY-zA-A1y" secondAttribute="trailingMargin" id="ymf-76-aVP"/>
-                            <constraint firstItem="Czb-s9-PJk" firstAttribute="trailing" secondItem="fCY-zA-A1y" secondAttribute="trailingMargin" id="zrT-9H-QDw"/>
+                            <constraint firstItem="9Qi-El-yct" firstAttribute="top" secondItem="rH0-tU-ygd" secondAttribute="bottom" id="689-RC-oIg"/>
+                            <constraint firstItem="rH0-tU-ygd" firstAttribute="top" secondItem="fCY-zA-A1y" secondAttribute="topMargin" id="DKh-we-nQZ"/>
+                            <constraint firstItem="AKn-ci-7cM" firstAttribute="top" secondItem="jdK-Tq-kcm" secondAttribute="bottom" constant="158" id="FWe-UG-rSp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AKn-ci-7cM" secondAttribute="trailing" constant="26" id="K3u-ML-g0B"/>
+                            <constraint firstItem="AKn-ci-7cM" firstAttribute="leading" secondItem="fCY-zA-A1y" secondAttribute="leadingMargin" constant="9" id="NIc-g7-ixX"/>
+                            <constraint firstItem="kkr-dK-KeA" firstAttribute="leading" secondItem="fCY-zA-A1y" secondAttribute="leadingMargin" constant="9" id="T6a-pL-EXW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rH0-tU-ygd" secondAttribute="trailing" constant="-16" id="U1v-gT-2rN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kkr-dK-KeA" secondAttribute="trailing" constant="8" id="eZz-cs-k7S"/>
+                            <constraint firstItem="kkr-dK-KeA" firstAttribute="top" secondItem="AKn-ci-7cM" secondAttribute="bottom" constant="16" id="o1Q-h4-5MT"/>
+                            <constraint firstItem="rH0-tU-ygd" firstAttribute="leading" secondItem="fCY-zA-A1y" secondAttribute="leadingMargin" constant="-16" id="xxJ-jd-X3D"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="5G7-xe-adM"/>
-                                <exclude reference="9hN-Yz-DXV"/>
-                                <exclude reference="yPy-le-W0C"/>
-                                <exclude reference="Y1B-iv-Kb4"/>
-                                <exclude reference="G8f-wt-c32"/>
-                                <exclude reference="ofw-oT-TF6"/>
-                            </mask>
-                        </variation>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="defaultImageView" destination="rH0-tU-ygd" id="bYp-T5-ElG"/>
+                        <outlet property="infoLab" destination="kkr-dK-KeA" id="Nws-ii-jSt"/>
+                        <outlet property="valueLab" destination="AKn-ci-7cM" id="DrP-hB-vmh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mc-9G-Cf1" userLabel="First Responder" sceneMemberID="firstResponder"/>

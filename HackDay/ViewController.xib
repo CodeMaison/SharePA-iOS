@@ -24,7 +24,8 @@
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOd-it-z0K">
                     <rect key="frame" x="-8" y="556" width="616" height="44"/>
                     <items>
-                        <barButtonItem title="Déclarer un problème" id="HMH-zA-4U8">
+                        <barButtonItem image="geoloc-2.png" style="done" id="fK7-kB-s5J"/>
+                        <barButtonItem title="Nouveau lieu" id="HMH-zA-4U8">
                             <connections>
                                 <action selector="showFormPage:" destination="-1" id="ggD-nI-C3G"/>
                             </connections>
@@ -56,6 +57,10 @@
                 <constraint firstAttribute="trailingMargin" secondItem="aE4-hz-Sxy" secondAttribute="trailing" constant="-16" id="mOg-Qr-cMf"/>
                 <constraint firstAttribute="bottom" secondItem="XOd-it-z0K" secondAttribute="bottom" id="zAb-xj-rc6"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
         </view>
     </objects>
+    <resources>
+        <image name="geoloc-2.png" width="44" height="44"/>
+    </resources>
 </document>

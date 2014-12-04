@@ -10,9 +10,9 @@
 #import "ProblemFormViewController.h"
 
 
-//#define kSiteURLString @"http://www.openstreetmap.org/node/938334959#map=14/48.8760/2.3400"
+#define kSiteURLString @"http://code-maison.cloud.ger.systems/SharePA/"
 
-#define kSiteURLString @"http://openlayers.org/en/master/examples/geolocation-orientation.html?q=mobile"
+//#define kSiteURLString @"http://openlayers.org/en/master/examples/geolocation-orientation.html?q=mobile"
 
 @interface ViewController () <UIWebViewDelegate>
 @property (nonatomic, weak) IBOutlet UIWebView *webView;

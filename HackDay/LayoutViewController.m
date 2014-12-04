@@ -12,8 +12,10 @@
 @interface LayoutViewController ()
 
 @property (nonatomic, weak) IBOutlet UIImageView *defaultImageView;
+@property (nonatomic, weak) IBOutlet UILabel *infoLab;
+@property (nonatomic, weak) IBOutlet UILabel *valueLab;
 
-
+@property (nonatomic, strong) NSDictionary *dataDico;
 @end
 
 @implementation LayoutViewController
@@ -21,7 +23,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self performSelector:@selector(dismissDefaultImage) withObject:nil afterDelay:3.0];
+    self.dataDico = @{@"3000":@"Le nombre de kilomètres de trottoirs offert par les rues parisiennes",
+                      @"332 000":@"Le nombre de personnes en situation de handicap à Paris (Source Mairie de Paris) ",
+                      @"3,6 millions":@"Le nombre de déplacements effectué quotidiennement par les piétons à Paris",
+                      @"120 000":@"Le nombre (arrondi et extrapolé) de poussettes à Paris sur la base des naissances 2011/2014 dans l'aglomération (Source INSEE)",
+                      @"600 mètres":@"La distance moyenne des trajets piétons à Paris",
+                      @"13 minutes":@"La durée moyenne d'un trajet piéton à Paris"};
+    
+    
+    NSUInteger  index = arc4random_uniform([self.dataDico count]);
+    NSLog(@"rand : %u",index);
+    
+    self.valueLab.text = [self.dataDico allKeys][index];
+    self.infoLab.text = self.dataDico[self.valueLab.text];
+    [self performSelector:@selector(dismissDefaultImage) withObject:nil afterDelay:2.0];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,7 +60,7 @@
         self.defaultImageView.alpha = 0,0;
         self.view.backgroundColor = [UIColor whiteColor];
     } completion:^(BOOL finished) {
-        [self performSelector:@selector(showMainPage) withObject:nil afterDelay:5.0];
+        [self performSelector:@selector(showMainPage) withObject:nil afterDelay:3.0];
         
     }];
 }

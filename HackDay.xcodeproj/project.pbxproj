@@ -17,6 +17,8 @@
 		A88192A41A30AEC400B6CAC8 /* LayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A88192A21A30AEC400B6CAC8 /* LayoutViewController.m */; };
 		A88192A71A30B2B100B6CAC8 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = A88192A61A30B2B100B6CAC8 /* loading.png */; };
 		A88192A91A30BAE700B6CAC8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A88192A81A30BAE700B6CAC8 /* ViewController.xib */; };
+		A88192AB1A30C59B00B6CAC8 /* geoloc.png in Resources */ = {isa = PBXBuildFile; fileRef = A88192AA1A30C59B00B6CAC8 /* geoloc.png */; };
+		A88192AD1A30C69300B6CAC8 /* geoloc-2.png in Resources */ = {isa = PBXBuildFile; fileRef = A88192AC1A30C69300B6CAC8 /* geoloc-2.png */; };
 		A898DF9B1A30492100D4125C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A898DF9A1A30492100D4125C /* main.m */; };
 		A898DF9E1A30492100D4125C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A898DF9D1A30492100D4125C /* AppDelegate.m */; };
 		A898DFA11A30492100D4125C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A898DFA01A30492100D4125C /* ViewController.m */; };
@@ -55,6 +57,8 @@
 		A88192A21A30AEC400B6CAC8 /* LayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutViewController.m; sourceTree = "<group>"; };
 		A88192A61A30B2B100B6CAC8 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loading.png; path = Images.xcassets/loading.png; sourceTree = "<group>"; };
 		A88192A81A30BAE700B6CAC8 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		A88192AA1A30C59B00B6CAC8 /* geoloc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = geoloc.png; path = Images.xcassets/geoloc.png; sourceTree = "<group>"; };
+		A88192AC1A30C69300B6CAC8 /* geoloc-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "geoloc-2.png"; path = "Images.xcassets/geoloc-2.png"; sourceTree = "<group>"; };
 		A898DF951A30492100D4125C /* HackDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A898DF991A30492100D4125C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A898DF9A1A30492100D4125C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 		A898DF981A30492100D4125C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A88192AC1A30C69300B6CAC8 /* geoloc-2.png */,
+				A88192AA1A30C59B00B6CAC8 /* geoloc.png */,
 				A88192A61A30B2B100B6CAC8 /* loading.png */,
 				A898DF991A30492100D4125C /* Info.plist */,
 				A898DF9A1A30492100D4125C /* main.m */,
@@ -258,7 +264,9 @@
 				A898DFA91A30492100D4125C /* LaunchScreen.xib in Resources */,
 				A881929A1A307C1C00B6CAC8 /* ProblemFormViewController.xib in Resources */,
 				A88192A91A30BAE700B6CAC8 /* ViewController.xib in Resources */,
+				A88192AB1A30C59B00B6CAC8 /* geoloc.png in Resources */,
 				A898DFA61A30492100D4125C /* Images.xcassets in Resources */,
+				A88192AD1A30C69300B6CAC8 /* geoloc-2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
